@@ -56,7 +56,7 @@ def tic_tac_toe():
                 if move.isdigit() and int(move) - 1 in winning_moves:
                     break
                 else:
-                    print('Invalid input. Please enter a winning move.')
+                    print('Dont try me! Invalid input. Please enter a winning move.')
         # Otherwise, prompt the player to make a move as before.
         else:
             while True:
@@ -67,7 +67,7 @@ def tic_tac_toe():
                     else:
                         print('That space is already taken.')
                 else:
-                    print('Invalid input. Please enter a number between 1 and 9.')
+                    print('Dont try me! Invalid input. Please enter a number between 1 and 9.')
         # Update the board with the player's move.
         board[int(move) - 1] = player
         # Check if the player has won the game.
@@ -78,9 +78,9 @@ def tic_tac_toe():
         # Check if the game has resulted in a tie.
         elif all([val != ' ' for val in board]):
             print_board(board)
-            print('Tie game!')
+            print('Tie game! What a waste of time!')
             break
         # If neither a win nor a tie has occurred, continue the game with the next player's turn.
         turn += 1
-    print('Thanks for playing!')
+    print('Wow you won!,Next time play monopoly ')
 tic_tac_toe()
